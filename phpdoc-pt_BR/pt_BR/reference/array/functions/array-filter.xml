@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- EN-Revision: 1.12 Maintainer: lucasr Status: ready -->
+<!-- splitted from ./pt_BR/functions/array.xml, last change in rev 1.1 -->
+<!-- last change to 'array-filter' in en/ tree in rev 1.62 -->
+  <refentry id="function.array-filter">
+   <refnamediv>
+    <refname>array_filter</refname>
+    <refpurpose>
+     Filtra os elementos de um array utilizando uma função
+    </refpurpose>
+   </refnamediv>
+   <refsect1>
+    <title>Descrição</title>
+     <methodsynopsis>
+      <type>array</type><methodname>array_filter</methodname>
+      <methodparam><type>array</type><parameter>input</parameter></methodparam>
+      <methodparam choice="opt"><type>mixed</type><parameter>callback</parameter></methodparam>
+     </methodsynopsis>
+    <para>
+     <function>array_filter</function> passa por cada valor de
+     <parameter>input</parameter> passando-os para a função
+     <parameter>callback</parameter>. Se a função <parameter>
+     callback</parameter> retornar true, o valor atual de
+     <parameter>input</parameter> é retornado na matriz resultado. 
+     Os índices das matrizes são preservados.
+    </para>
+    <para>
+     <example>
+      <title>Exemplo de <function>array_filter</function></title>
+      <programlisting role="php">
+<![CDATA[
+<?php
+function impar($var) {
+    return($var % 2 == 1);
+}
+
+function par($var) {
+    return($var % 2 == 0);
+}
+
+$array1 = array("a" => 1, "b" => 2, "c" => 3, "d" => 4, "e" => 5);
+$array2 = array(6, 7, 8, 9, 10, 11, 12);
+
+echo "Impares: \n";
+print_r(array_filter($array1, "impar"));
+echo "Pares: \n";
+print_r(array_filter($array2, "par"));
+?>
+]]>
+      </programlisting>
+      <para>
+       A saída deste programa seria:
+      </para>
+       <screen role="php">
+<![CDATA[
+Impares:
+Array
+(
+    [a] => 1
+    [c] => 3
+    [e] => 5
+)
+Pares:
+Array
+(
+    [0] => 6
+    [2] => 8
+    [4] => 10
+    [6] => 12
+)
+]]>
+       </screen>
+     </example>
+    </para>     
+    <para>
+     As funções utilizadas por <function>array_filter</function>
+     não devem alterar os valores do array.. Por exemplo, adicionar ou
+     remover um elemento, pode apagar o array ao qual está sendo aplicada
+     <function>array_filter</function>. Se este array for alterado,
+     o comportamento desta função se torna imprevisvel.
+    </para>
+    <para>
+     Veja também <function>array_map</function>,
+     <function>array_reduce</function> e <function>array_walk</function>.
+    </para>
+   </refsect1>
+  </refentry>
+
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-omittag:t
+sgml-shorttag:t
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:1
+sgml-indent-data:t
+indent-tabs-mode:nil
+sgml-parent-document:nil
+sgml-default-dtd-file:"../../../../manual.ced"
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+vim600: syn=xml fen fdm=syntax fdl=2 si
+vim: et tw=78 syn=sgml
+vi: ts=1 sw=1
+-->

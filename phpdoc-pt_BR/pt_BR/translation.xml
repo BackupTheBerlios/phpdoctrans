@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE translation SYSTEM "../entities/translation.dtd">
+
+<!-- * * * * * NAO UTILIZE TABS * * * * * -->
+
+<translation>
+   <intro>The Brazilian Portuguese translation of the PHP Documentation is managed  by João Prado Maia (jpm), and the other contributors with a CVS account.</intro>
+
+   <translators>
+    <person name="Renato Arruda" email="rla9216 at osfmail.rit.edu" nick="rarruda" cvs="yes"/>
+    <person name="André Luis Ferreira da Silva Bacci" email="andre_ae at uol.com.br" nick="ae" cvs="yes"/>
+    <person name="Anderson Fortaleza" cvs="yes" email="phaser at php.net" nick="phaser"/>
+    <person name="João Prado Maia" email="jpm at phpbrasil.com" nick="jpm" cvs="yes"/>
+    <person name="Claudio Pereira" email="cpereira at ig.com.br" nick="cpereira" cvs="yes"/>
+    <person name="Lucas Rocha" email="lucasr at php.net" nick="lucasr" cvs="yes"/>
+    <person name="Alessander P. L. Thomaz" email="kappu at php.net" nick="kappu" cvs="yes"/>
+    <person name="Taniel Franklin" email="taniel at eletroj.ufba.br" nick="surfmax" cvs="yes"/>
+    <person name="Thomas Gonzalez Miranda" email="thomasgm at php.net" nick="thomasgm" cvs="yes"/>
+    <person name="Ernani Joppert Pontes Martins" email="ernani at php.net" nick="ernani" cvs="yes"/>
+    <person name="Fernando Correa da Conceição" email="fernando.conceicao at terra.com.br" nick="fernandoc" cvs="yes"/>
+    <person name="Marcelo Pereira Fonseca da Silva" email="marcelo at php.net" nick="marcelo" cvs="yes"/>
+   </translators>
+
+   <work-in-progress>
+    <file name="reference/ircg/*" person="marcelo" type="translation" date="2003.10.19"/>
+    <file name="security/*" person="surfmax" type="translation" date="2003.09.21"/>
+    <file name="reference/aspell;/reference/calendar" person="thomasgm" type="translation" date="2003.11.02"/>
+    <file name="/reference/uodbc/*;/reference/crack/*;/reference/readline" person="fernandoc" type="translation" date="2003.10.25"/>
+   </work-in-progress>
+
+</translation>

@@ -1,0 +1,230 @@
+<!-- $Revision: 1.1 $ -->
+
+<!ENTITY warn.experimental '<warning><simpara>This extension is
+<emphasis>EXPERIMENTAL</emphasis>. The behaviour of this extension --
+including the names of its functions and anything else documented
+about this extension -- may change without notice in a future release of PHP. 
+Use this extension at your own risk.</simpara></warning>'>
+
+<!ENTITY warn.experimental.func '<warning><simpara>This function is
+<emphasis>EXPERIMENTAL</emphasis>. The behaviour of this function, the
+name of this function, and anything else documented about this
+function may change without notice in a future release of PHP. 
+Use this function at your own risk.</simpara></warning>'>
+
+<!ENTITY warn.undocumented.func '<warning><simpara>This function is
+currently not documented; only the argument list is
+available.</simpara></warning>'>
+
+<!ENTITY warn.no-win32-fopen-wrapper '<warning><para>Windows
+versions of <literal>PHP</literal> prior to PHP 4.3.0 do not
+support accessing remote files via this function, even if
+<link linkend="ini.allow-url-fopen">allow_url_fopen</link> is enabled.
+</para></warning>'>
+
+<!ENTITY note.no-remote '<note><simpara>This function will not work on 
+<link linkend="features.remote-files">remote files</link> as the file to
+be examined must be accessible via the servers filesystem.</simpara></note>'>
+
+<!ENTITY tip.ob-capture '<tip><simpara>As with anything that outputs
+its result directly to the browser, you can use the <link
+linkend="ref.outcontrol">output-control functions</link> to capture
+the output of this function, and save it in a
+<type>string</type> (for example).</simpara></tip>'>
+
+<!ENTITY tip.fopen-wrapper '<tip><simpara>You can use a URL as a
+filename with this function if the <link linkend="ini.allow-url-fopen"
+>fopen wrappers</link> have been enabled.
+See <function>fopen</function> for more details on how to specify
+the filename and <xref linkend="wrappers"/> for a list of supported
+URL protocols.</simpara></tip>'>
+
+<!ENTITY return.success 'Returns &true; on success or &false; on failure.'>
+
+<!ENTITY array.resetspointer '<note><simpara>This function will 
+<function>reset</function> the <type>array</type> pointer after 
+use.</simpara></note>'>
+
+<!ENTITY note.clearstatcache '<note><simpara>The results of this 
+function are cached. See <function>clearstatcache</function> for 
+more details.</simpara></note>'>
+
+<!ENTITY return.falseproblem '<warning><simpara>This function may
+return Boolean &false;, but may also return a non-Boolean value which
+evaluates to &false;, such as <literal>0</literal> or
+&quot;&quot;. Please read the section on <link
+linkend="language.types.boolean">Booleans</link> for more
+information. Use <link linkend="language.operators.comparison">the ===
+operator</link> for testing the return value of this
+function.</simpara></warning>'>
+
+<!ENTITY warn.imaprecodeyaz '<warning><simpara>The <link
+linkend="ref.imap">IMAP</link> extension cannot be used in conjuction with
+the <link linkend="ref.recode">recode</link> or <link
+linkend="ref.yaz">YAZ</link> extensions.  This is due to the fact that they
+both share the same internal symbol.</simpara></warning>'>
+
+<!ENTITY note.registerglobals '<note><title>register_globals: important 
+note</title><para>Since PHP 4.2.0, the default value for the PHP directive 
+<link linkend="ini.register-globals">register_globals</link> is <emphasis>
+off</emphasis>.  The PHP community encourages all to not rely on this 
+directive but instead use other means, such as the &link.superglobals;.
+</para></note>'>
+	
+<!ENTITY note.superglobals '<note><title>Superglobals: availability note
+</title><para>Since PHP 4.1.0, superglobal arrays such as <varname>$_GET
+</varname>, <varname>$_POST</varname>, and <varname>$_SERVER</varname>, 
+etc. have  been available.  For more information, read the manual section 
+on &link.superglobals;</para></note>'>
+
+<!ENTITY avail.register-long-arrays 'As of PHP 5.0.0, the long PHP 
+<link linkend="language.variables.predefined">predefined variable</link>
+arrays may be disabled with the 
+<link linkend="ini.register-long-arrays">register_long_arrays</link>
+directive.'>
+
+<!ENTITY note.magicquotes.gpc '<note><title>directive note: magic_quotes_gpc
+</title><para>The PHP directive <link linkend="ini.magic-quotes-gpc">
+magic_quotes_gpc</link> defaults to <literal>on</literal>.  It essentially 
+runs <function>addslashes</function> on all your GET,  POST, and COOKIE data.
+You may use <function>stripslashes</function> to strip them.</para></note>'>
+
+<!-- Various notes -->
+<!ENTITY note.randomseed '<note><simpara>As of PHP 4.2.0, there is no need 
+to seed the random number generator with <function>srand</function> or 
+<function>mt_srand</function> as this is now done automatically.
+</simpara></note>'>
+
+<!ENTITY note.not-bin-safe '<warning><simpara>This function
+is not (yet) binary safe!</simpara></warning>'>
+
+<!ENTITY note.bin-safe '<note><simpara>This function is
+binary-safe.</simpara></note>'>
+
+<!ENTITY note.line-endings '<note><simpara>If you are having problems
+with <literal>PHP</literal> not recognizing the line endings when
+reading files either on or created by a Macintosh computer, you
+might want to enable the <link linkend="ini.auto-detect-line-endings"
+>auto_detect_line_endings</link> run-time configuration option.</simpara>
+</note>'>
+
+<!ENTITY note.no-windows '<note><simpara>This function is not
+implemented on Windows platforms.</simpara></note>'>
+
+<!ENTITY note.no-windows.extension '<note><simpara>This extension is not
+available on Windows platforms.</simpara></note>'>
+
+<!ENTITY note.func-callback '<note><simpara>Instead of a function name, an
+array containing an object reference and a method name can also be
+supplied.</simpara></note>'>
+
+<!-- Notes for safe-mode limited functions: -->
+<!ENTITY note.sm.disabled '<note><simpara>&sm.disabled;</simpara></note>'>
+
+<!ENTITY note.sm.uidcheck '<note><simpara>When <link 
+linkend="features.safe-mode">safe mode</link> is enabled, PHP checks whether 
+the files or directories you are about to operate on have the same UID (owner) as the 
+script that is being executed.</simpara></note>'>
+
+<!ENTITY note.sm.uidcheck.dir '<note><simpara>When <link 
+linkend="features.safe-mode">safe mode</link> is enabled, PHP checks whether 
+the directory in which you are about to operate has the same UID (owner) as the 
+script that is being executed.</simpara></note>'>
+
+<!ENTITY note.language-construct '<note><simpara>Because this is a 
+language construct and not a function, it cannot be called using 
+<link linkend="functions.variable-functions">variable functions</link></simpara>
+</note>'>
+
+<!-- Common pieces in features/safe-mode.xml 
+     Jade doesn't allow in-line entities, so I put them here... Though they 
+     should have been inline in safe-mode.xml -->
+<!ENTITY sm.uidcheck 'Checks whether the files or directories you are 
+about to operate on have the same UID (owner) as the script that is being
+executed.'>
+
+<!ENTITY sm.uidcheck.dir 'Checks whether the directory in which
+you are about to operate has the same UID (owner) as the script that is being
+executed.'>
+
+<!ENTITY sm.disabled 'This function is disabled in <link 
+linkend="features.safe-mode">safe mode</link>.'>
+
+<!-- Common pieces in partintro-sections -->
+<!ENTITY no.config '<para>This extension has no configuration directives defined in &php.ini;.</para>'>
+<!ENTITY no.resource '<para>This extension has no resource types defined.</para>'>
+<!ENTITY no.constants '<para>This extension has no constants defined.</para>'>
+<!ENTITY no.requirement '<para>No external libraries are needed to build this extension.</para>'>
+<!ENTITY no.install '<para>There is no installation needed to use these
+functions; they are part of the PHP core.</para>'>
+
+<!-- Used in every chapter that has directive descriptions -->
+<!ENTITY ini.descriptions.title '<para>Here&apos;s a short explanation of
+the configuration directives.</para>'>
+
+<!-- Used in reference/$extname/ini.xml -->
+<!ENTITY extension.runtime '<simpara>
+The behaviour of these functions is affected by settings in &php.ini;.
+</simpara>'>
+
+<!-- Used in reference/$extname/constants.xml -->
+<!ENTITY extension.constants '<simpara>
+The constants below are defined by this extension, and
+will only be available when the extension has either
+been compiled into PHP or dynamically loaded at runtime.
+</simpara>'>
+
+<!-- For STANDARD Constants used in reference/$extname/constants.xml -->
+<!ENTITY extension.constants.core '<simpara>
+The constants below are always available as part of the PHP core.
+</simpara>'>
+
+<!-- Used in reference/$extname/classes.xml -->
+<!ENTITY extension.classes '<simpara>
+The classes below are defined by this extension, and
+will only be available when the extension has either
+been compiled into PHP or dynamically loaded at runtime.
+</simpara>'>
+
+<!ENTITY windows.builtin '<simpara> The windows version of <literal>PHP</literal>
+has built in support for this extension. You do not need to load any additional
+extension in order to use these functions.</simpara>'>
+
+<!-- These are here as helpers for manual consistency and brievety-->
+<!ENTITY php '<literal>PHP</literal>'>
+<!ENTITY safemode '<link linkend="ini.safe-mode">safe mode</link>'>
+
+<!-- Database Notes -->
+<!ENTITY database.field-case '<note><simpara>Field names returned by this function
+are <emphasis>case-sensitive</emphasis>.</simpara></note>'>
+
+<!-- Sybase Notes -->
+<!ENTITY sybase.ct.only '<note><simpara>This function is only available using the CT library interface to Sybase, and not the DB library.</simpara></note>'>
+
+<!-- Some MySQL Notes -->
+<!ENTITY mysql.field-case '<note><simpara>Field names returned by this function
+are <emphasis>case-sensitive</emphasis></simpara></note>'>
+
+<!-- CPDF Unit length -->
+<!ENTITY cpdf.ul '<para>The optional parameter <parameter>mode</parameter> determines the unit length. If it is 0 or omitted the default unit as specified for the page is used. Otherwise the coordinates are measured in postscript points disregarding the current unit.</para>'>
+
+<!-- These are using in reference/$extname/reference.xml and other
+supplemental files to mark section titles -->
+<!ENTITY reftitle.intro     '<title>Introduction</title>'>
+<!ENTITY reftitle.required  '<title>Requirements</title>'>
+<!ENTITY reftitle.install   '<title>Installation</title>'>
+<!ENTITY reftitle.runtime   '<title>Runtime Configuration</title>'>
+<!ENTITY reftitle.resources '<title>Resource Types</title>'>
+<!ENTITY reftitle.constants '<title>Predefined Constants</title>'>
+<!ENTITY reftitle.classes '<title>Predefined Classes</title>'>
+<!ENTITY reftitle.examples  '<title>Examples</title>'>
+<!ENTITY reftitle.seealso   '<title>See Also</title>'>
+
+<!-- Notes for IPv6 -->
+<!ENTITY ipv6.brackets '<note><simpara>When specifying a numerical IPv6 address
+(e.g. fe80::1) you must enclose the IP in square brackets.  For example,  
+<literal>tcp://[fe80::1]:80</literal>.</simpara></note>'>
+
+<!ENTITY ipv6.php5 '<note><simpara>IPv6 Support was added with <literal>PHP
+5.0.0 </literal>.</simpara></note>'>
+

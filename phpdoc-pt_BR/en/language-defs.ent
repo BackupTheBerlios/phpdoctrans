@@ -1,0 +1,20 @@
+<!-- $Revision: 1.1 $ -->
+
+<!ENTITY PHPManual         "PHP Manual">
+<!ENTITY Date              "Date:">
+<!ENTITY GettingStarted    "Getting Started">
+<!ENTITY Installation      "Installation">
+<!ENTITY LanguageReference "Language Reference">
+<!ENTITY Features          "Features">
+<!ENTITY Security          "Security">
+<!ENTITY FunctionReference "Function Reference">
+<!ENTITY Appendixes        "Appendixes">
+<!ENTITY PEAR              "PEAR: the PHP Extension and Application Repository">
+<!ENTITY FAQ               "FAQ: Frequently Asked Questions">
+<!ENTITY FAQabbrev         "FAQ">
+<!ENTITY api               "PHP API: Interfaces for extension writers">
+<!ENTITY apiabbrev         "PHP API">
+<!ENTITY FunctionIndex     "Function Index">
+<!ENTITY CHMEdition        "HTML Help Edition">
+<!ENTITY ReservedConstants "Predefined Constants">
+<!ENTITY MissingStuff      "Missing Stuff">
